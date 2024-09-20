@@ -1,0 +1,115 @@
+REMEMBER To press and HOLD the "CONTROL" KEY When running runhide.exe TO POPUP GUI OPTIONS WINDOW.
+Update 2024.06.05
+-Added ini file info on title and Hand green icon.
+Update 2024.05.31
+-Added Hand red icon.
+Update 2024.05.28
+-Bug fixed to bring asking message box to top.
+Upsate 2024.05.24
+-Bug fixed to bring app to top.
+-Added Macro %PROCESSID% is the "Previous Task" Execute application processId to be used in Main Task "Parameters"
+Update 2024,05,12
+-Wallpaper, Getfocus bug.
+Update 2024,05,10
+-Ask dialogs are more explicit. Minor bug fixed.
+Update 2024,05,07
+-Added Working directory for calling Cladb.exe
+BugFix 2024,04,24
+-Trim quotes trail and lead when saving ini.
+BugFix 2024,04,15
+-Clarion 10 does hung "waiting" until closing application executed by runhide.
+Update 2019,05,22
+-Bug: Now runhide does Wait the application to finish when TIMEOUT=0 (before it kills the aplication)
+Update 2016,12,13
+-Bug: crash on several windows versions
+Update 2016,04,02
+-Bug: solved multiple command line was ignored
+-Now Command line parameters has priority over Ini configuration file.
+Update 2013,02,11
+-Remove Copy subfoldes Recursive bug.
+Update 2013,02,09
+-Added "Copy after Exectute" Option.
+-Bigger Windows.
+
+Update 2011,09,29
+
+Now support for clarion lang.:
+
+As many Clarioneers knows, Clarions 4.x,5.x and 6.x is a win16app creating win32apps...
+
+Copy runhide.exe into the bin dir. of your clarion.
+
+Go to Clarion Main Menu: Project->edit
+
+This will open the window of "Project Editor".
+Select Program to Execute from Proyect Tree control
+
+Select runhide.exe (in the bin dir of your clarion app.)
+
+I use the above method in multidll proyect to copy and execute the main exe.
+
+Hope it save a lot of time in your side.
+
+(you can rename runhide.exe to match your main app. name; so you can have multiple configuration.)
+
+best regard from the AA town in México.
+Francisco Carabez.
+
+Update 2011,08,29
+
+Corrected bug:In GUI the program switchs "Term" and "Show" values.
+Added funtionality to enter in GUI mode when asking for Copy or Execute.
+
+Hi there!
+
+Here you have my own personal version of RunHide.exe (original application from Bryan Keadle), that supports an ini file
+to get the parameters.
+
+Best Regards.
+
+Francisco J. Carabez
+
+May 7 2009
+
+
+REMEMBER TO PRESS AND HOLD CTR KEY TO POPUP OPTIONS WINDOW.
+
+....
+
+
+
+=====================================
+http://www.novell.com/coolsolutions/tools/14871.html
+=====================================
+
+Sometimes you want to run or distribute a program,
+and want to be able to hide the window(s) it creates.
+
+Introducing RunHide.exe,
+an utility program that enables you to do just that.
+
+RunHide /?
+
+
+SYNTAX: RunHide (program) (parameters) (TIMEOUT=seconds) (TERM)
+
+Run any named program as a hidden window.
+Programs launched with RunHide should not require any user interaction.
+Should the hidden program require any user interaction to continue, 
+or pauses due to an error, the program will remain in memory until 
+the user logs out of the computer or the computer is rebooted.
+
+To accomodate any potential errors like this,
+specify a TIMEOUT value in seconds. 
+If after the specified number of seconds,
+the launched program has not terminated, it will be forcefully terminated.
+
+If you did not specify a TIMEOUT value,
+but you find the program is still running hidden,
+you may terminate the program by specifying the TERM option.
+
+For example:
+
+      RunHide MyProgram TERM
+
+This will kill all instances of MYPROGRAM.EXE
